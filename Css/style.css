@@ -45,3 +45,12 @@ body{
     font-size: 18px;
 
 }
+.form .input button{
+    width: 30%;
+    height: 30px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 400ms ease;
+}
