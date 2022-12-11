@@ -1,6 +1,8 @@
 const input = document.getElementById('input');
 const searchBtn=document.getElementById('btn');
 const notFoundWord=document.querySelector('.cant_find_word');
+const definationBox=document.querySelector('.defination');
+const audioBox=document.querySelector('.audio');
 
 searchBtn.addEventListener('click',e =>{
     // console.log('Hello World!!')
@@ -15,6 +17,8 @@ searchBtn.addEventListener('click',e =>{
     
     getSearchedWord(searchedWord);
     notFoundWord.innerText="";
+    audioBox.innerText="";
+    definationBox.innerText="";
 });
 
 async function getSearchedWord(searchedWord){
@@ -26,5 +30,20 @@ async function getSearchedWord(searchedWord){
         notFoundWord.innerText="No results Found";
         return;
     }
+    if (typeof data[0] === 'string'){ //if result is suggestions
+        let heading = document.createElement('h2');
+        heading.innerText = 'Did you mean?';
+        notFoundWord.appendChild(heading);
+
+        data.forEach(element => {
+            let suggestion=document.createElement('span');
+            suggestion.classList.add('suggested');
+            suggestion.innerText=element;
+            notFoundWord.appendChild(suggestion);
+            
+        });
+        return;
+    }
+    
 }
     
