@@ -31,7 +31,7 @@ async function getSearchedWord(searchedWord){
         return;
     }
     if (typeof data[0] === 'string'){ //if result is suggestions
-        let heading = document.createElement('h2');
+        let heading = document.createElement('h3');
         heading.innerText = 'Did you mean?';
         notFoundWord.appendChild(heading);
 
@@ -41,7 +41,7 @@ async function getSearchedWord(searchedWord){
             suggestion.innerText=element;
             notFoundWord.appendChild(suggestion);
             
-        });
+        })
         return;
     }
     
