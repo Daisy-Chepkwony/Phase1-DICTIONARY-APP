@@ -9,11 +9,12 @@ searchBtn.addEventListener('click',e =>{
     const searchedWord=input.value;
     // console.log(searchedWord);
     if (searchedWord===""){
-    alert('Please enterd the searched Word');
+    alert('Please entered the searched Word');
     return;
     }
     
     getSearchedWord(searchedWord);
+    notFoundWord.innerText="";
 });
 
 async function getSearchedWord(searchedWord){
