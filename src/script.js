@@ -44,8 +44,18 @@ async function getSearchedWord(searchedWord){
         })
         return;
     }
+    //To revisit
     let definations = data[0].shortdef[0]; //find the results and give it back
     definationBox.innerText = definations;
+
+    let soundName=data[0].hwi.prs[0].sound.audio;
+    if(soundName){ //if sound is available
+        getSound(soundName);
+
+    }
     
+}
+function getSound(soundName){
+
 }
     
