@@ -10,7 +10,7 @@ searchBtn.addEventListener('click',e =>{
 
     const searchedWord=input.value;
     // console.log(searchedWord);
-    if (searchedWord===""){
+    if (searchedWord === ""){
     alert('Please entered the searched Word');
     return;
     }
@@ -44,6 +44,8 @@ async function getSearchedWord(searchedWord){
         })
         return;
     }
+    let definations = data[0].shortdef[0]; //find the results and give it back
+    definationBox.innerText = definations;
     
 }
     
