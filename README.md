@@ -14,6 +14,7 @@ This dictionary application is using the real-time data from the Google dictiona
 
 ## Functionality
 
+
 ## Credits
 
 Technologies used include HTML,CSS and JAVASCRIPT
