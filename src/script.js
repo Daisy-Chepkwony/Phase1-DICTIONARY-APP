@@ -40,6 +40,7 @@ async function getSearchedWord(searchedWord){
             suggestion.classList.add('suggested');
             suggestion.innerText=element;
             notFoundWord.appendChild(suggestion);
+
             
         })
         return;
@@ -53,9 +54,20 @@ async function getSearchedWord(searchedWord){
         getSound(soundName);
 
     }
-    
 }
+
+
+
+//T o get sound of the searched word
 function getSound(soundName){
+    let box=soundName.charAt(0);
+    let soundSrc=`https://media.merriam-webster.com/soundc11/${box}/${soundName}.wav?key=696bb10c-9957-46a7-a71d-ebdc6368e23d`;
+
+    let audioSound=document.createElement('audio');
+    audioSound.src=soundSrc;
+    audioSound.controls=true;
+    audioBox.appendChild(audioSound)
+
 
 }
     
