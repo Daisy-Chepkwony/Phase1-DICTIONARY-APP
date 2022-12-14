@@ -1,4 +1,5 @@
 # DICTIONARY APP
+It is an English Dictionary APP.
 
 ## INTRODUCTION
 
