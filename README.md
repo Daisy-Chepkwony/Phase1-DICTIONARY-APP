@@ -13,6 +13,9 @@ This dictionary application is using the real-time data from the Google dictiona
 
 
 ## Functionality
+The user can type a word that they would wish to get the meaning.
+The app would give back the wsearched word meaning and give the audio of the word searched.
+if the word is not found in the dictionary then it will give the use the alternatives.
 
 
 ## Credits
