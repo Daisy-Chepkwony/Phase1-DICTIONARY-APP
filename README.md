@@ -23,3 +23,8 @@ if the word is not found in the dictionary then it will give the use the alterna
 Technologies used include HTML,CSS and JAVASCRIPT
 
 ## Licences
+
+Copyright(c)[2022]
+[Daisy-Chepkwony]
+
+Permision is hereby granted,free of charge to any Person obtaining a copy of this software and associated documentation files(the "Software"),to deal in the Software without restriction,including without limitation the right to use,copy,modify,merge,publish,distribute,sublicense,and/or sell copies of the Software,and to permit persons to whom the Software is furnished to do so,subject to the following conditions:R The above copyright notice and this permissions notice shall be included in all copies or the substantial portions of the software.
