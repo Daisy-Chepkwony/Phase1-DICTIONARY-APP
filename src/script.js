@@ -40,7 +40,7 @@ async function getSearchedWord(searchedWord){
             suggestion.classList.add('suggested');
             suggestion.innerText=element;
             notFoundWord.appendChild(suggestion);
-
+            
             
         })
         return;
